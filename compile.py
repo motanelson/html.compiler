@@ -1,8 +1,13 @@
-print("\033c\033[47;31m\n give me the .html file to compile")
-a=input().strip()
+from tkinter import filedialog
+
+
+print("\033c\033[47;30m\n give me the .html file to compile")
+a=filedialog.askopenfile(title="give me the .txt pack file  ? ",defaultextension="*.txt")
+a=a.name
+
 b=a.replace(".html","")
-print("\033[47;31m\n")
-c="hello\n"
+print("\033[47;30m\n")
+c="cafe"
 f1=open(a,"rb")
 f=f1.read()
 f1.close()

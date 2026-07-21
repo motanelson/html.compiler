@@ -1,9 +1,25 @@
 import os
-print("\033c\033[47;31m\ngive me a .htmlcx file to run")
-a=input().strip()
+from tkinter import filedialog
+
+
+print("\033c\033[47;30m\ngive me a .htmlcx file to run")
+a=filedialog.askopenfile(title="give me the .txt pack file  ? ",defaultextension="*.txt")
+a=a.name
+a=a.replace("\\","/")
+
+aa=0
+while(1):
+    f=a.find("/")
+    if f>-1:
+       a=a[f+1:]
+    else:
+       break  
+ 
+a=a.strip()
+
 b=a.replace(".htmlcx","")
-print("\033[47;31m\n")
-c="hello\n"
+print("\033[47;30m\n")
+c="cafe\n"
 f1=open(a,"rb")
 f=f1.read()
 f1.close()
