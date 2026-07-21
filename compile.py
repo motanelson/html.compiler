@@ -7,7 +7,7 @@ a=a.name
 
 b=a.replace(".html","")
 print("\033[47;30m\n")
-c="cafe"
+c="cafe\n"
 f1=open(a,"rb")
 f=f1.read()
 f1.close()
