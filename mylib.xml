@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fpdoc-description>
+
+  <package name="MinhaBiblioteca">
+
+    <module name="mylib">
+
+      <element name="Soma">
+        <short>Soma dois números inteiros.</short>
+        <descr>
+          <p>
+            A função recebe dois números inteiros e devolve
+            a soma dos dois.
+          </p>
+
+          <p>
+            Por exemplo:
+            <code>Soma(10, 20)</code> devolve <code>30</code>.
+          </p>
+        </descr>
+      </element>
+
+      <element name="Quadrado">
+        <short>Calcula o quadrado de um número.</short>
+        <descr>
+          <p>
+            Multiplica o número por ele próprio.
+          </p>
+
+          <p>
+            Por exemplo:
+            <code>Quadrado(5)</code> devolve <code>25</code>.
+          </p>
+        </descr>
+      </element>
+
+    </module>
+
+  </package>
+
+</fpdoc-description>
+
